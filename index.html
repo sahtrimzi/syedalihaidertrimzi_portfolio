@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Syed Ali Haider Trimzi | Data Engineer Portfolio & Roadmap</title>
+    <meta name="description" content="Portfolio and 18-month interactive roadmap of Syed Ali Haider Trimzi, an aspiring Data Engineer and CS student building scalable pipelines.">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Background Canvas for Interactive Data Flow -->
+    <canvas id="pipelineCanvas"></canvas>
+
+    <!-- Header / Navigation -->
+    <header class="header" id="mainHeader">
+        <div class="header-container">
+            <a href="#" class="logo">
+                <span class="logo-accent">&lt;</span>sahtrimzi<span class="logo-accent"> /&gt;</span>
+            </a>
+            <button class="mobile-nav-toggle" aria-label="Toggle navigation" id="navToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <nav class="nav-menu" id="navMenu">
+                <a href="#home" class="nav-link active" id="nav-link-home">Home</a>
+                <a href="#roadmap" class="nav-link" id="nav-link-roadmap">Roadmap</a>
+                <a href="#skills" class="nav-link" id="nav-link-skills">Skills</a>
+                <a href="#projects" class="nav-link" id="nav-link-projects">Projects</a>
+                <a href="#contact" class="nav-link" id="nav-link-contact">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="hero-section">
+            <div class="hero-content">
+                <div class="badge" id="heroBadge">Active Learning Phase 1: Database Mastery</div>
+                <h1 class="hero-title">
+                    Syed Ali Haider Trimzi
+                </h1>
+                <h2 class="hero-subtitle">
+                    Building the Pipelines of Tomorrow
+                </h2>
+                <p class="hero-description">
+                    I am a B.S. Computer Science student and an aspiring <strong>Data Engineer</strong>. Currently following a rigorous 18-month roadmap to master databases, cloud architectures, big data processing, and streaming systems. Focused on building highly reliable, automated data flows.
+                </p>
+                <div class="hero-actions">
+                    <a href="#roadmap" class="btn btn-primary" id="exploreRoadmapBtn">Explore Roadmap</a>
+                    <a href="#projects" class="btn btn-secondary" id="viewProjectsBtn">View Projects</a>
+                </div>
+                <div class="social-links">
+                    <a href="https://github.com/sahtrimzi" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="GitHub Profile" id="gitHubLink">
+                        <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                    </a>
+                    <a href="https://www.linkedin.com/in/syed-ali-haider-trimzi" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="LinkedIn Profile" id="linkedInLink">
+                        <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+                    </a>
+                    <a href="mailto:syedalihaidertrimzi01@gmail.com" class="social-icon" aria-label="Send Email" id="emailLink">
+                        <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                    </a>
+                </div>
+            </div>
+            
+            <!-- Quick Status Dashboard Widget -->
+            <div class="hero-stats">
+                <div class="stat-card">
+                    <span class="stat-number">18</span>
+                    <span class="stat-label">Month Journey</span>
+                </div>
+                <div class="stat-card active-card">
+                    <span class="stat-number">Phase 1</span>
+                    <span class="stat-label">Current Phase</span>
+                </div>
+                <div class="stat-card">
+                    <span class="stat-number">7</span>
+                    <span class="stat-label">Milestones</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Roadmap Timeline Section -->
+        <section id="roadmap" class="roadmap-section">
+            <div class="section-header">
+                <h2 class="section-title">Data Engineering Roadmap</h2>
+                <p class="section-subtitle">Follow my progression path step-by-step from Month 1 to Month 18.</p>
+            </div>
+
+            <!-- Roadmap Stepper Navigation (Horizontal/Desktop) -->
+            <div class="roadmap-stepper" id="roadmapStepper">
+                <button class="step-btn active" data-phase="1" id="step-1">
+                    <span class="step-num">01</span>
+                    <span class="step-title">Database Mastery</span>
+                </button>
+                <button class="step-btn" data-phase="2" id="step-2">
+                    <span class="step-num">02</span>
+                    <span class="step-title">Python & Analytics</span>
+                </button>
+                <button class="step-btn" data-phase="3" id="step-3">
+                    <span class="step-num">03</span>
+                    <span class="step-title">Linux & Airflow</span>
+                </button>
+                <button class="step-btn" data-phase="4" id="step-4">
+                    <span class="step-num">04</span>
+                    <span class="step-title">PySpark Big Data</span>
+                </button>
+                <button class="step-btn" data-phase="5" id="step-5">
+                    <span class="step-num">05</span>
+                    <span class="step-title">AWS & Warehouse</span>
+                </button>
+                <button class="step-btn" data-phase="6" id="step-6">
+                    <span class="step-num">06</span>
+                    <span class="step-title">Kafka & K8s</span>
+                </button>
+                <button class="step-btn" data-phase="7" id="step-7">
+                    <span class="step-num">07</span>
+                    <span class="step-title">IaC & Capstone</span>
+                </button>
+            </div>
+
+            <!-- Active Phase Container -->
+            <div class="roadmap-display-card" id="roadmapDisplayCard">
+                <!-- Data will load dynamically from JS, providing a fallback for SEO here -->
+                <div class="phase-detail-layout" id="phaseDetailContainer">
+                    <div class="phase-info">
+                        <div class="phase-meta">
+                            <span class="phase-duration" id="detailDuration">Months 1-2</span>
+                            <span class="phase-status status-active" id="detailStatus">Current Phase</span>
+                        </div>
+                        <h3 class="phase-heading" id="detailTitle">Phase 1: Database Mastery</h3>
+                        <p class="phase-description" id="detailDesc">
+                            Focusing on designing rock-solid data structures and learning SQL and NoSQL storage systems inside out. Designing real-world schemas, optimizing slow queries, and understanding document structures.
+                        </p>
+                        
+                        <div class="tech-stack-group">
+                            <h4>Core Technologies:</h4>
+                            <div class="tech-tags" id="detailTechTags">
+                                <span class="tag">PostgreSQL</span>
+                                <span class="tag">MongoDB</span>
+                                <span class="tag">Schema Design</span>
+                                <span class="tag">Query Optimization</span>
+                                <span class="tag">Aggregation Pipelines</span>
+                            </div>
+                        </div>
+
+                        <div class="learning-checklist">
+                            <h4>Milestone Checklist:</h4>
+                            <ul id="detailChecklist">
+                                <li>Master PostgreSQL schema design, keys, indexes, and normalization.</li>
+                                <li>Deep dive into PostgreSQL advanced features (triggers, window functions, CTEs).</li>
+                                <li>Learn MongoDB CRUD operations & aggregation pipelines.</li>
+                                <li>Set up clusters using MongoDB Atlas.</li>
+                                <li>Build a comprehensive University Management System.</li>
+                                <li>Solve and document 50+ advanced SQL queries on GitHub.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="phase-project-preview">
+                        <div class="project-preview-card">
+                            <div class="preview-header">Featured Phase Project</div>
+                            <h4 id="detailProjTitle">University Management System</h4>
+                            <p id="detailProjDesc">A robust relational and document database solution to track students, courses, grades, and schedules. Includes complete DB schemas and 50 production-ready queries.</p>
+                            <div class="pipeline-flow-mini" id="detailProjFlow">
+                                <div class="flow-node">PostgreSQL</div>
+                                <div class="flow-arrow">➔</div>
+                                <div class="flow-node">MongoDB Atlas</div>
+                                <div class="flow-arrow">➔</div>
+                                <div class="flow-node">SQL Queries (50)</div>
+                            </div>
+                            <a href="#projects" class="btn btn-outline btn-sm" id="detailProjLink">View Details</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Technical Skills Matrix -->
+        <section id="skills" class="skills-section">
+            <div class="section-header">
+                <h2 class="section-title">Technical Skillset Matrix</h2>
+                <p class="section-subtitle">Categorized view of tools and methodologies I'm mastering across the roadmap.</p>
+            </div>
+
+            <div class="skills-grid">
+                <!-- Category 1 -->
+                <div class="skill-category-card">
+                    <div class="category-icon">
+                        <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none"><ellipse cx="12" cy="5" rx="9" ry="3"></ellipse><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path><path d="M3 12c0 1.66 4 3 9 3s9-1.34 9-3"></path></svg>
+                    </div>
+                    <h3>Databases (SQL & NoSQL)</h3>
+                    <ul class="skill-list">
+                        <li>
+                            <div class="skill-item-info"><span>PostgreSQL (Schemas, CTEs, Window Fns)</span><span class="status-tag learning">In Progress</span></div>
+                            <div class="progress-bar"><div class="progress-fill" style="width: 80%"></div></div>
+                        </li>
+                        <li>
+                            <div class="skill-item-info"><span>MongoDB (Atlas, Aggregation Pipelines)</span><span class="status-tag learning">In Progress</span></div>
+                            <div class="progress-bar"><div class="progress-fill" style="width: 60%"></div></div>
+                        </li>
+                        <li>
+                            <div class="skill-item-info"><span>Database Normalization & Indexing</span><span class="status-tag learning">In Progress</span></div>
+                            <div class="progress-bar"><div class="progress-fill" style="width: 75%"></div></div>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Category 2 -->
+                <div class="skill-category-card">
+                    <div class="category-icon">
+                        <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path><polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline><line x1="12" y1="22.08" x2="12" y2="12"></line></svg>
+                    </div>
+                    <h3>Programming & Analytics</h3>
+                    <ul class="skill-list">
+                        <li>
+                            <div class="skill-item-info"><span>Python (Pandas, NumPy, Matplotlib)</span><span class="status-tag future">Future Track</span></div>
+                            <div class="progress-bar"><div class="progress-fill" style="width: 30%"></div></div>
+                        </li>
+                        <li>
+                            <div class="skill-item-info"><span>Exploratory Data Analysis (EDA)</span><span class="status-tag future">Future Track</span></div>
+                            <div class="progress-bar"><div class="progress-fill" style="width: 15%"></div></div>
+                        </li>
+                        <li>
+                            <div class="skill-item-info"><span>Power BI (DAX & Dashboards)</span><span class="status-tag future">Future Track</span></div>
+                            <div class="progress-bar"><div class="progress-fill" style="width: 10%"></div></div>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Category 3 -->
+                <div class="skill-category-card">
+                    <div class="category-icon">
+                        <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none"><path d="M22 12h-4l-3 9L9 3l-3 9H2"></path></svg>
+                    </div>
+                    <h3>Pipelines & Orchestration</h3>
+                    <ul class="skill-list">
+                        <li>
+                            <div class="skill-item-info"><span>Apache Airflow (DAGs & Docker Setup)</span><span class="status-tag future">Future Track</span></div>
+                            <div class="progress-bar"><div class="progress-fill" style="width: 0%"></div></div>
+                        </li>
+                        <li>
+                            <div class="skill-item-info"><span>Bash Scripting & Automation</span><span class="status-tag future">Future Track</span></div>
+                            <div class="progress-bar"><div class="progress-fill" style="width: 10%"></div></div>
+                        </li>
+                        <li>
+                            <div class="skill-item-info"><span>Git Advanced (Branching, Actions)</span><span class="status-tag future">Future Track</span></div>
+                            <div class="progress-bar"><div class="progress-fill" style="width: 35%"></div></div>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Category 4 -->
+                <div class="skill-category-card">
+                    <div class="category-icon">
+                        <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none"><polygon points="12 2 2 7 12 12 22 7 12 2"></polygon><polyline points="2 17 12 22 22 17"></polyline><polyline points="2 12 12 17 22 12"></polyline></svg>
+                    </div>
+                    <h3>Big Data & Streaming</h3>
+                    <ul class="skill-list">
+                        <li>
+                            <div class="skill-item-info"><span>PySpark (DataFrames, SQL, Cache)</span><span class="status-tag future">Future Track</span></div>
+                            <div class="progress-bar"><div class="progress-fill" style="width: 0%"></div></div>
+                        </li>
+                        <li>
+                            <div class="skill-item-info"><span>Apache Kafka (Producers, Consumers)</span><span class="status-tag future">Future Track</span></div>
+                            <div class="progress-bar"><div class="progress-fill" style="width: 0%"></div></div>
+                        </li>
+                        <li>
+                            <div class="skill-item-info"><span>Spark Streaming (Real-time analytics)</span><span class="status-tag future">Future Track</span></div>
+                            <div class="progress-bar"><div class="progress-fill" style="width: 0%"></div></div>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Category 5 -->
+                <div class="skill-category-card">
+                    <div class="category-icon">
+                        <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none"><path d="M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z"></path></svg>
+                    </div>
+                    <h3>Cloud & Warehousing</h3>
+                    <ul class="skill-list">
+                        <li>
+                            <div class="skill-item-info"><span>AWS (S3, RDS, Glue, Lambda)</span><span class="status-tag future">Future Track</span></div>
+                            <div class="progress-bar"><div class="progress-fill" style="width: 0%"></div></div>
+                        </li>
+                        <li>
+                            <div class="skill-item-info"><span>AWS Redshift (Star Schema Design)</span><span class="status-tag future">Future Track</span></div>
+                            <div class="progress-bar"><div class="progress-fill" style="width: 0%"></div></div>
+                        </li>
+                        <li>
+                            <div class="skill-item-info"><span>dbt (Data Build Tool, Modeling, Tests)</span><span class="status-tag future">Future Track</span></div>
+                            <div class="progress-bar"><div class="progress-fill" style="width: 0%"></div></div>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Category 6 -->
+                <div class="skill-category-card">
+                    <div class="category-icon">
+                        <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none"><rect x="2" y="2" width="20" height="8" rx="2" ry="2"></rect><rect x="2" y="14" width="20" height="8" rx="2" ry="2"></rect><line x1="6" y1="6" x2="6.01" y2="6"></line><line x1="6" y1="18" x2="6.01" y2="18"></line></svg>
+                    </div>
+                    <h3>DevOps & Infrastructure</h3>
+                    <ul class="skill-list">
+                        <li>
+                            <div class="skill-item-info"><span>Docker & Kubernetes Basics</span><span class="status-tag future">Future Track</span></div>
+                            <div class="progress-bar"><div class="progress-fill" style="width: 5%"></div></div>
+                        </li>
+                        <li>
+                            <div class="skill-item-info"><span>Terraform (Infrastructure as Code)</span><span class="status-tag future">Future Track</span></div>
+                            <div class="progress-bar"><div class="progress-fill" style="width: 0%"></div></div>
+                        </li>
+                        <li>
+                            <div class="skill-item-info"><span>Prometheus & Grafana (Monitoring)</span><span class="status-tag future">Future Track</span></div>
+                            <div class="progress-bar"><div class="progress-fill" style="width: 0%"></div></div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Project Catalog -->
+        <section id="projects" class="projects-section">
+            <div class="section-header">
+                <h2 class="section-title">Roadmap Projects Portfolio</h2>
+                <p class="section-subtitle">Every milestone features an ambitious, hands-on data project. Explore details below.</p>
+            </div>
+
+            <!-- Filter Controls -->
+            <div class="project-filters">
+                <button class="filter-btn active" data-filter="all">All Projects</button>
+                <button class="filter-btn" data-filter="current">Current & Near Phase</button>
+                <button class="filter-btn" data-filter="advanced">Advanced Architecture</button>
+            </div>
+
+            <!-- Projects Grid -->
+            <div class="projects-grid" id="projectsGrid">
+                
+                <!-- Project 1 (Phase 1) -->
+                <div class="project-card" data-category="current">
+                    <div class="project-banner bg-grad-1">
+                        <span class="status-badge status-active">Active</span>
+                        <span class="phase-tag">Phase 1 (Month 1-2)</span>
+                    </div>
+                    <div class="project-body">
+                        <h3 class="project-title">University Management System</h3>
+                        <p class="project-description">A production-scale schema for an academic institution. Employs complex constraints, database modeling, and aggregation systems.</p>
+                        <div class="tech-tags-mini">
+                            <span>PostgreSQL</span>
+                            <span>MongoDB</span>
+                            <span>pgAdmin</span>
+                            <span>Atlas</span>
+                        </div>
+                        <div class="project-actions">
+                            <button class="btn btn-sm btn-outline btn-arch" data-project="1">View Schema</button>
+                            <a href="https://github.com/sahtrimzi" target="_blank" rel="noopener noreferrer" class="project-code-link">
+                                <svg viewBox="0 0 24 24" width="18" height="18" stroke="currentColor" stroke-width="2" fill="none"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                                Code
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2 (Phase 2) -->
+                <div class="project-card" data-category="current">
+                    <div class="project-banner bg-grad-2">
+                        <span class="status-badge status-planned">Planned</span>
+                        <span class="phase-tag">Phase 2 (Month 3-4)</span>
+                    </div>
+                    <div class="project-body">
+                        <h3 class="project-title">Pakistani Market Sales & Finance Dashboard</h3>
+                        <p class="project-description">Comprehensive EDA on Pakistani retail e-commerce and local stock market movements. Employs stats, pandas, and Power BI dashboards.</p>
+                        <div class="tech-tags-mini">
+                            <span>Python</span>
+                            <span>Pandas</span>
+                            <span>Matplotlib</span>
+                            <span>Power BI</span>
+                        </div>
+                        <div class="project-actions">
+                            <button class="btn btn-sm btn-outline btn-arch" data-project="2">View Architecture</button>
+                            <a href="#" class="project-code-link disabled">Coming Soon</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3 (Phase 3) -->
+                <div class="project-card" data-category="current">
+                    <div class="project-banner bg-grad-3">
+                        <span class="status-badge status-planned">Planned</span>
+                        <span class="phase-tag">Phase 3 (Month 5-6)</span>
+                    </div>
+                    <div class="project-body">
+                        <h3 class="project-title">Automated DB to S3 Pipeline</h3>
+                        <p class="project-description">A fully automated scheduler that extracts transactional tables from PostgreSQL, writes raw CSV datasets, and uploads them to AWS S3 storage.</p>
+                        <div class="tech-tags-mini">
+                            <span>Linux/WSL</span>
+                            <span>Bash</span>
+                            <span>Docker</span>
+                            <span>Apache Airflow</span>
+                        </div>
+                        <div class="project-actions">
+                            <button class="btn btn-sm btn-outline btn-arch" data-project="3">View DAG Flow</button>
+                            <a href="#" class="project-code-link disabled">Coming Soon</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 4 (Phase 4) -->
+                <div class="project-card" data-category="advanced">
+                    <div class="project-banner bg-grad-4">
+                        <span class="status-badge status-planned">Planned</span>
+                        <span class="phase-tag">Phase 4 (Month 7-9)</span>
+                    </div>
+                    <div class="project-body">
+                        <h3 class="project-title">1M Row PySpark Benchmarking</h3>
+                        <p class="project-description">Processing massive financial ledger entries. Demonstrates Spark performance tweaks like broadcast joins, caching, and partitioning vs Pandas speed.</p>
+                        <div class="tech-tags-mini">
+                            <span>PySpark</span>
+                            <span>Spark SQL</span>
+                            <span>Apache Spark</span>
+                            <span>Jupyter</span>
+                        </div>
+                        <div class="project-actions">
+                            <button class="btn btn-sm btn-outline btn-arch" data-project="4">View Benchmark</button>
+                            <a href="#" class="project-code-link disabled">Coming Soon</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 5 (Phase 5) -->
+                <div class="project-card" data-category="advanced">
+                    <div class="project-banner bg-grad-5">
+                        <span class="status-badge status-planned">Planned</span>
+                        <span class="phase-tag">Phase 5 (Month 10-12)</span>
+                    </div>
+                    <div class="project-body">
+                        <h3 class="project-title">Cloud E-Commerce Data Warehouse</h3>
+                        <p class="project-description">Scalable pipeline transforming S3 logs via Glue Crawler, loading into Redshift in a Star Schema format, organized by dbt modeling and test rules.</p>
+                        <div class="tech-tags-mini">
+                            <span>AWS S3/Glue</span>
+                            <span>Redshift</span>
+                            <span>dbt</span>
+                            <span>Power BI</span>
+                        </div>
+                        <div class="project-actions">
+                            <button class="btn btn-sm btn-outline btn-arch" data-project="5">View Schema Model</button>
+                            <a href="#" class="project-code-link disabled">Coming Soon</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 6 (Phase 6) -->
+                <div class="project-card" data-category="advanced">
+                    <div class="project-banner bg-grad-6">
+                        <span class="status-badge status-planned">Planned</span>
+                        <span class="phase-tag">Phase 6 (Month 13-15)</span>
+                    </div>
+                    <div class="project-body">
+                        <h3 class="project-title">Real-Time Order Processing System</h3>
+                        <p class="project-description">Real-time streaming pipeline processing transaction queues via Kafka producers and consumers, running aggregations in Spark Streaming, writing directly to Postgres.</p>
+                        <div class="tech-tags-mini">
+                            <span>Kafka Connect</span>
+                            <span>Spark Streaming</span>
+                            <span>Docker Compose</span>
+                            <span>Kubernetes</span>
+                        </div>
+                        <div class="project-actions">
+                            <button class="btn btn-sm btn-outline btn-arch" data-project="6">View Live Stream Flow</button>
+                            <a href="#" class="project-code-link disabled">Coming Soon</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Final Capstone Highlight Block -->
+            <div class="capstone-highlight-card">
+                <div class="capstone-icon">
+                    <svg viewBox="0 0 24 24" width="32" height="32" stroke="currentColor" stroke-width="2" fill="none"><path d="M12 2L2 7l10 5 10-5-10-5z"></path><path d="M2 17l10 5 10-5"></path><path d="M2 12l10 5 10-5"></path></svg>
+                </div>
+                <div class="capstone-content">
+                    <div class="capstone-badge">Months 16-18 Capstone Milestone</div>
+                    <h3 class="capstone-title">End-to-End E-Commerce Data Platform</h3>
+                    <p class="capstone-description">
+                        The ultimate synthesis of all phases. I will design a fully production-ready e-commerce telemetry pipeline. Infrastructure is created using Terraform IaC, scheduled via Gitlab/GitHub actions CI/CD, tested for validation via Great Expectations, and monitored continuously with Prometheus and Grafana alerting boards.
+                    </p>
+                    <div class="capstone-flow">
+                        <span>Terraform IaC</span> ➔ <span>Raw Ingestion (Kafka/S3)</span> ➔ <span>dbt Modeling (Redshift)</span> ➔ <span>Great Expectations Testing</span> ➔ <span>Grafana Board</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact-section">
+            <div class="section-header">
+                <h2 class="section-title">Get in Touch</h2>
+                <p class="section-subtitle">Interested in collaborating or discussing data structures? Drop a message!</p>
+            </div>
+
+            <div class="contact-layout">
+                <div class="contact-info-block">
+                    <h3>Contact Information</h3>
+                    <p>Feel free to reach out via email or connect with me on professional networking sites. I'm always open to discussing new opportunities, university projects, and data engineering challenges.</p>
+                    
+                    <div class="info-details">
+                        <div class="info-item">
+                            <div class="info-icon">
+                                <svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2" fill="none"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                            </div>
+                            <div class="info-text">
+                                <span class="info-label">Email</span>
+                                <a href="mailto:syedalihaidertrimzi01@gmail.com" class="info-value">syedalihaidertrimzi01@gmail.com</a>
+                            </div>
+                        </div>
+
+                        <div class="info-item">
+                            <div class="info-icon">
+                                <svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2" fill="none"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+                            </div>
+                            <div class="info-text">
+                                <span class="info-label">LinkedIn</span>
+                                <a href="https://www.linkedin.com/in/syed-ali-haider-trimzi" target="_blank" rel="noopener noreferrer" class="info-value">Syed Ali Haider Trimzi</a>
+                            </div>
+                        </div>
+
+                        <div class="info-item">
+                            <div class="info-icon">
+                                <svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2" fill="none"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                            </div>
+                            <div class="info-text">
+                                <span class="info-label">GitHub</span>
+                                <a href="https://github.com/sahtrimzi" target="_blank" rel="noopener noreferrer" class="info-value">github.com/sahtrimzi</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-form-block">
+                    <form id="contactForm" class="contact-form">
+                        <div class="form-group">
+                            <label for="formName">Name</label>
+                            <input type="text" id="formName" name="name" required placeholder="John Doe">
+                        </div>
+                        <div class="form-group">
+                            <label for="formEmail">Email</label>
+                            <input type="email" id="formEmail" name="email" required placeholder="john@example.com">
+                        </div>
+                        <div class="form-group">
+                            <label for="formSubject">Subject</label>
+                            <input type="text" id="formSubject" name="subject" required placeholder="Collaboration Inquiry">
+                        </div>
+                        <div class="form-group">
+                            <label for="formMessage">Message</label>
+                            <textarea id="formMessage" name="message" rows="5" required placeholder="Write your message here..."></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-block" id="formSubmitBtn">Send Message</button>
+                        <div class="form-status" id="formStatus"></div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Project Architecture Schema Drawer -->
+    <div class="drawer-overlay" id="drawerOverlay">
+        <div class="drawer" id="projectDrawer">
+            <div class="drawer-header">
+                <h3 class="drawer-title" id="drawerTitle">Project Architecture Diagram</h3>
+                <button class="drawer-close" id="drawerClose" aria-label="Close drawer">&times;</button>
+            </div>
+            <div class="drawer-body">
+                <div class="architecture-canvas" id="architectureCanvas">
+                    <!-- Dynamic rendering of project flow/schema -->
+                </div>
+                <div class="drawer-details">
+                    <h4>Technical Description</h4>
+                    <p id="drawerDesc">Detailed pipeline flow and components configuration description will be placed here dynamically based on the project clicked.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <p>&copy; 2026 Syed Ali Haider Trimzi. All rights reserved.</p>
+            <p class="footer-tagline">Roadmap to Data Engineering Excellence</p>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
