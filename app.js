@@ -76,18 +76,18 @@ document.addEventListener('DOMContentLoaded', () => {
             status: "Current Phase",
             statusClass: "status-active",
             title: "Phase 1: Database Mastery",
-            desc: "Building a strong foundation in database architecture. I am learning how to design efficient schemas, write complex queries, and model data for both SQL and NoSQL environments.",
-            techTags: ["PostgreSQL", "MongoDB", "SQL Advanced", "Schema Design", "Aggregation Pipelines", "Database Indexing", "MongoDB Atlas"],
+            desc: "Establishing a robust foundation in database architecture. Focusing on designing highly normalized schemas, optimizing complex queries, and modeling data for scalable SQL and NoSQL ecosystems.",
+            techTags: ["PostgreSQL", "MongoDB", "Data Modeling (ERD)", "Advanced SQL", "Performance Tuning"],
             checklist: [
-                "Design normalized schemas and implement entity-relationship models.",
-                "Write complex analytical queries using CTEs, window functions, and triggers.",
-                "Model non-relational data and construct aggregation pipelines in MongoDB.",
-                "Develop an end-to-end database schema for a university system.",
-                "Solve 50+ real-world query optimization challenges.",
-                "Use AI tools to review query performance and refine schema designs."
+                "Architect normalized schemas and enforce referential integrity in PostgreSQL.",
+                "Develop complex analytical queries using CTEs and window functions.",
+                "Design non-relational document models and aggregation pipelines in MongoDB.",
+                "Deploy and manage scalable cloud database clusters via MongoDB Atlas.",
+                "Build an end-to-end relational database solution for university operations.",
+                "Resolve 50+ real-world query optimization and performance tuning challenges."
             ],
-            projTitle: "University Management System Database",
-            projDesc: "A custom database architecture designed to manage university operations, handling student enrollments, course schedules, and grading. It includes complete schema diagrams and optimized queries for reporting.",
+            projTitle: "University Management System",
+            projDesc: "A scalable database architecture built to streamline university operations—handling enrollments, scheduling, and grading. Features complete ERD schemas, migration scripts, and highly optimized reporting queries.",
             projFlow: ["PostgreSQL Schema", "MongoDB Documents", "pgAdmin / Atlas Setup", "50+ Advanced SQL Queries"]
         },
         2: {
