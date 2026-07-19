@@ -79,7 +79,7 @@ document.addEventListener('DOMContentLoaded', () => {
             desc: "Learning the fundamentals of database design and querying. My focus is on understanding relational data modeling, writing efficient SQL, and exploring document-based NoSQL storage.",
             techTags: ["PostgreSQL", "MongoDB Atlas", "ERD Modeling", "SQL Joins & CTEs", "Database Normalization"],
             checklist: [
-                "<strong>Learn:</strong> Understand core SQL concepts, joins, and database normalization (1NF to 3NF).",
+                "<strong>Learn:</strong> Understand core SQL concepts, joins, and database normalization.",
                 "<strong>Design:</strong> Create an Entity-Relationship Diagram (ERD) for a university system.",
                 "<strong>Build:</strong> Implement the relational schema in PostgreSQL with primary and foreign keys.",
                 "<strong>Query:</strong> Write 50+ practical SQL queries utilizing CTEs, window functions, and aggregations.",
@@ -244,7 +244,7 @@ document.addEventListener('DOMContentLoaded', () => {
             listContainer.innerHTML = '';
             data.checklist.forEach(item => {
                 const li = document.createElement('li');
-                li.textContent = item;
+                li.innerHTML = item;
                 listContainer.appendChild(li);
             });
 
