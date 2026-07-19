@@ -115,7 +115,7 @@ document.addEventListener('DOMContentLoaded', () => {
             status: "Planned Track",
             statusClass: "status-planned",
             title: "Phase 3: Linux + Git + Airflow",
-            desc: "Setting up development and execution workspaces. Automating cron workloads, managing source trees, and building the first workflows using Apache Airflow orchestrators inside virtual environments.",
+            desc: "Setting up development and execution workspaces. Automating cron workloads, managing version control workflows with Git, and building the first workflows using Apache Airflow inside virtual environments.",
             techTags: ["Linux / WSL", "Bash Scripting", "Cron Jobs", "Git Advanced", "GitHub Actions", "Docker", "Apache Airflow"],
             checklist: [
                 "Transition daily programming workspace to Linux command line using WSL (Windows Subsystem for Linux).",
@@ -135,7 +135,7 @@ document.addEventListener('DOMContentLoaded', () => {
             status: "Planned Track",
             statusClass: "status-planned",
             title: "Phase 4: Apache Spark + PySpark",
-            desc: "Entering the Big Data realm. Shifting processing loads from single-machine Pandas frames to distributed computing architectures. Mastering memory management, dataset partitions, and stream configurations.",
+            desc: "Transitioning to large-scale data processing. Shifting workloads from single-machine Pandas to distributed computing architectures, and learning memory management, dataset partitions, and stream configurations.",
             techTags: ["PySpark", "Spark SQL", "SparkSession", "Spark Streaming", "DataFrames", "Caching & Partitioning", "Broadcast Joins"],
             checklist: [
                 "Understand distributed computing fundamentals: Driver, Executor, Worker nodes, and lazy evaluation.",
@@ -146,7 +146,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 "Benchmark Spark's scaling efficiency vs Pandas by processing a dataset containing 1,000,000+ rows."
             ],
             projTitle: "1 Million Row PySpark Processor",
-            projDesc: "Benchmarking script and reports processing large datasets, demonstrating transformations, partition optimizations, and comparing running execution speeds directly to Pandas.",
+            projDesc: "Benchmarking script and reports processing large datasets, demonstrating transformations, partition optimizations, and benchmarking execution speed against Pandas.",
             projFlow: ["1M+ Row CSV", "PySpark Session", "Broadcast Joins / Partitions", "Parquet Outputs"]
         },
         5: {
@@ -154,7 +154,7 @@ document.addEventListener('DOMContentLoaded', () => {
             status: "Planned Track",
             statusClass: "status-planned",
             title: "Phase 5: Cloud (AWS) + Data Warehouse",
-            desc: "Designing and scaling enterprise warehouses on cloud infrastructure. Configuring ingestion engines, cataloging schemas, designing star layouts, and deploying modeling transformations via dbt.",
+            desc: "Designing and scaling production-style data warehouses on cloud infrastructure. Configuring ingestion engines, cataloging schemas, designing star layouts, and deploying modeling transformations via dbt.",
             techTags: ["AWS S3", "AWS Glue", "Redshift", "AWS Lambda", "dbt (Data Build Tool)", "Star Schema Design", "IAM Policies"],
             checklist: [
                 "Understand AWS core services: S3 Storage, RDS Instances, IAM Security Policies.",
@@ -201,7 +201,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 "Assemble Capstone: Fully automated, monitored, and tested e-commerce analytics cloud platform."
             ],
             projTitle: "End-to-End E-Commerce Data Platform",
-            projDesc: "The ultimate synthesis of the roadmap: Terraform provisions AWS Redshift, Airflow runs DAGs, Great Expectations audits database quality, and Grafana maps throughput metrics.",
+            projDesc: "A comprehensive project uniting the core tools: Terraform provisions AWS Redshift, Airflow runs DAGs, Great Expectations audits database quality, and Grafana maps throughput metrics.",
             projFlow: ["Terraform IaC", "Git Actions CI/CD", "Great Expectations Audit", "Prometheus & Grafana Alerting"]
         }
     };
