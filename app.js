@@ -72,7 +72,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // -------------------------------------------------------------
     const roadmapData = {
         1: {
-            duration: "Months 1-2",
+            duration: "Phase 1",
             status: "Current Phase",
             statusClass: "status-active",
             title: "Phase 1: Database Mastery",
@@ -91,7 +91,7 @@ document.addEventListener('DOMContentLoaded', () => {
             projFlow: ["PostgreSQL Schema", "MongoDB Documents", "pgAdmin / Atlas Setup", "50+ Advanced SQL Queries"]
         },
         2: {
-            duration: "Months 3-4",
+            duration: "Phase 2",
             status: "Planned Track",
             statusClass: "status-planned",
             title: "Phase 2: Python + Data Analytics",
@@ -111,7 +111,7 @@ document.addEventListener('DOMContentLoaded', () => {
             projFlow: ["Raw Pakistani Data", "Pandas EDA", "SQLAlchemy Engine", "Power BI DAX Dashboard"]
         },
         3: {
-            duration: "Months 5-6",
+            duration: "Phase 3",
             status: "Planned Track",
             statusClass: "status-planned",
             title: "Phase 3: Linux + Git + Airflow",
@@ -131,7 +131,7 @@ document.addEventListener('DOMContentLoaded', () => {
             projFlow: ["Postgres Data", "Bash Script Extract", "Airflow Scheduler (Docker)", "AWS S3 Loader"]
         },
         4: {
-            duration: "Months 7-9",
+            duration: "Phase 4",
             status: "Planned Track",
             statusClass: "status-planned",
             title: "Phase 4: Apache Spark + PySpark",
@@ -150,7 +150,7 @@ document.addEventListener('DOMContentLoaded', () => {
             projFlow: ["1M+ Row CSV", "PySpark Session", "Broadcast Joins / Partitions", "Parquet Outputs"]
         },
         5: {
-            duration: "Months 10-12",
+            duration: "Phase 5",
             status: "Planned Track",
             statusClass: "status-planned",
             title: "Phase 5: Cloud (AWS) + Data Warehouse",
@@ -169,7 +169,7 @@ document.addEventListener('DOMContentLoaded', () => {
             projFlow: ["S3 landing", "Glue Crawlers / Job", "AWS Redshift Star Schema", "dbt Models & Tests"]
         },
         6: {
-            duration: "Months 13-15",
+            duration: "Phase 6",
             status: "Planned Track",
             statusClass: "status-planned",
             title: "Phase 6: Kafka + Docker + Kubernetes",
@@ -187,7 +187,7 @@ document.addEventListener('DOMContentLoaded', () => {
             projFlow: ["Order Event Stream", "Kafka Brokers", "PySpark Stream Ingest", "Postgres target"]
         },
         7: {
-            duration: "Months 16-18",
+            duration: "Capstone",
             status: "Planned Track",
             statusClass: "status-planned",
             title: "Phase 7: IaC + Monitoring + Capstone",
