@@ -108,7 +108,7 @@ document.addEventListener('DOMContentLoaded', () => {
             ],
             projTitle: "Pakistani E-Commerce & Finance Dashboard",
             projDesc: "A complete data analysis portfolio project containing Kaggle notebooks executing EDA on retail consumer behaviors and local stock performance, linked to an interactive Power BI dashboard.",
-            projFlow: ["Raw Pakistani Data", "Pandas EDA", "SQLAlchemy Engine", "Power BI DAX Dashboard"]
+            projSnapshot: ["Raw Pakistani Data", "Pandas EDA", "SQLAlchemy Engine", "Power BI DAX Dashboard"]
         },
         3: {
             duration: "Phase 3",
@@ -128,7 +128,7 @@ document.addEventListener('DOMContentLoaded', () => {
             ],
             projTitle: "Automated Data Pipeline (DB to S3)",
             projDesc: "Containerized Apache Airflow environment scheduling DAGs that extract transactional DB entries, transform structure to CSV, and securely push datasets to AWS S3 storage buckets.",
-            projFlow: ["Postgres Data", "Bash Script Extract", "Airflow Scheduler (Docker)", "AWS S3 Loader"]
+            projSnapshot: ["Postgres Data", "Bash Script Extract", "Airflow Scheduler (Docker)", "AWS S3 Loader"]
         },
         4: {
             duration: "Phase 4",
@@ -147,7 +147,7 @@ document.addEventListener('DOMContentLoaded', () => {
             ],
             projTitle: "1 Million Row PySpark Processor",
             projDesc: "Benchmarking script and reports processing large datasets, demonstrating transformations, partition optimizations, and benchmarking execution speed against Pandas.",
-            projFlow: ["1M+ Row CSV", "PySpark Session", "Broadcast Joins / Partitions", "Parquet Outputs"]
+            projSnapshot: ["1M+ Row CSV", "PySpark Session", "Broadcast Joins / Partitions", "Parquet Outputs"]
         },
         5: {
             duration: "Phase 5",
@@ -166,7 +166,7 @@ document.addEventListener('DOMContentLoaded', () => {
             ],
             projTitle: "E-Commerce AWS Data Warehouse",
             projDesc: "End-to-end e-commerce pipeline collecting transactional events. Files landing on S3 trigger Glue cataloging and Redshift loading, modeled into star schemas using dbt.",
-            projFlow: ["S3 landing", "Glue Crawlers / Job", "AWS Redshift Star Schema", "dbt Models & Tests"]
+            projSnapshot: ["S3 landing", "Glue Crawlers / Job", "AWS Redshift Star Schema", "dbt Models & Tests"]
         },
         6: {
             duration: "Phase 6",
@@ -184,7 +184,7 @@ document.addEventListener('DOMContentLoaded', () => {
             ],
             projTitle: "Real-Time Order Processing System",
             projDesc: "Stream ingestion application routing mock e-commerce transactions through Kafka brokers, running real-time aggregations in PySpark, and dumping reports to Postgres dashboards.",
-            projFlow: ["Order Event Stream", "Kafka Brokers", "PySpark Stream Ingest", "Postgres target"]
+            projSnapshot: ["Order Event Stream", "Kafka Brokers", "PySpark Stream Ingest", "Postgres target"]
         },
         7: {
             duration: "Capstone",
@@ -202,7 +202,7 @@ document.addEventListener('DOMContentLoaded', () => {
             ],
             projTitle: "End-to-End E-Commerce Data Platform",
             projDesc: "A comprehensive project uniting the core tools: Terraform provisions AWS Redshift, Airflow runs DAGs, Great Expectations audits database quality, and Grafana maps throughput metrics.",
-            projFlow: ["Terraform IaC", "Git Actions CI/CD", "Great Expectations Audit", "Prometheus & Grafana Alerting"]
+            projSnapshot: ["Terraform IaC", "Git Actions CI/CD", "Great Expectations Audit", "Prometheus & Grafana Alerting"]
         }
     };
 
