@@ -535,6 +535,7 @@ section {
     color: var(--text-secondary);
     margin-bottom: 2rem;
     font-size: 1.05rem;
+    line-height: 1.7;
 }
 
 .tech-stack-group {
@@ -633,9 +634,10 @@ section {
 }
 
 .project-preview-card p {
-    font-size: 0.9rem;
+    font-size: 0.95rem;
     color: var(--text-secondary);
     margin-bottom: 1.5rem;
+    line-height: 1.6;
 }
 
 .pipeline-flow-mini {
@@ -659,6 +661,30 @@ section {
 
 .flow-arrow {
     color: var(--text-muted);
+}
+
+.project-snapshot {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 0.75rem;
+    margin-bottom: 2rem;
+    background: rgba(15, 23, 42, 0.4);
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    padding: 1.25rem;
+}
+
+.snapshot-item {
+    font-size: 0.85rem;
+    color: var(--text-secondary);
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.snapshot-item span {
+    color: var(--neon-cyan);
+    font-weight: 800;
 }
 
 /* Skills Matrix Styling */

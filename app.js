@@ -76,19 +76,19 @@ document.addEventListener('DOMContentLoaded', () => {
             status: "Current Phase",
             statusClass: "status-active",
             title: "Phase 1: Database Mastery",
-            desc: "Establishing a robust foundation in database architecture. Focusing on designing highly normalized schemas, optimizing complex queries, and modeling data for scalable SQL and NoSQL ecosystems.",
-            techTags: ["PostgreSQL", "MongoDB", "Data Modeling (ERD)", "Advanced SQL", "Performance Tuning"],
+            desc: "Learning the fundamentals of database design and querying. My focus is on understanding relational data modeling, writing efficient SQL, and exploring document-based NoSQL storage.",
+            techTags: ["PostgreSQL", "MongoDB Atlas", "ERD Modeling", "SQL Joins & CTEs", "Database Normalization"],
             checklist: [
-                "Architect normalized schemas and enforce referential integrity in PostgreSQL.",
-                "Develop complex analytical queries using CTEs and window functions.",
-                "Design non-relational document models and aggregation pipelines in MongoDB.",
-                "Deploy and manage scalable cloud database clusters via MongoDB Atlas.",
-                "Build an end-to-end relational database solution for university operations.",
-                "Resolve 50+ real-world query optimization and performance tuning challenges."
+                "<strong>Learn:</strong> Understand core SQL concepts, joins, and database normalization (1NF to 3NF).",
+                "<strong>Design:</strong> Create an Entity-Relationship Diagram (ERD) for a university system.",
+                "<strong>Build:</strong> Implement the relational schema in PostgreSQL with primary and foreign keys.",
+                "<strong>Query:</strong> Write 50+ practical SQL queries utilizing CTEs, window functions, and aggregations.",
+                "<strong>Expand:</strong> Setup a MongoDB Atlas cluster and learn basic NoSQL document structuring.",
+                "<strong>Document:</strong> Publish the complete schema and query library to GitHub for review."
             ],
             projTitle: "University Management System",
-            projDesc: "A scalable database architecture built to streamline university operations—handling enrollments, scheduling, and grading. Features complete ERD schemas, migration scripts, and highly optimized reporting queries.",
-            projFlow: ["PostgreSQL Schema", "MongoDB Documents", "pgAdmin / Atlas Setup", "50+ Advanced SQL Queries"]
+            projDesc: "A practical database modeling project mapping out a university's core operations, including student enrollments, course schedules, and grading.",
+            projSnapshot: ["12+ Relational Tables", "PostgreSQL & pgAdmin", "Complete ER Diagram", "50+ Documented Queries"]
         },
         2: {
             duration: "Phase 2",
@@ -253,21 +253,37 @@ document.addEventListener('DOMContentLoaded', () => {
             document.getElementById('detailProjDesc').textContent = data.projDesc;
 
             // Update Project Flow Ingress Diagram
-            const flowContainer = document.getElementById('detailProjFlow');
-            flowContainer.innerHTML = '';
-            data.projFlow.forEach((step, idx) => {
-                const node = document.createElement('div');
-                node.className = 'flow-node';
-                node.textContent = step;
-                flowContainer.appendChild(node);
+            const flowContainer = document.getElementById('detailProjSnapshot') || document.getElementById('detailProjFlow');
+            if (flowContainer) {
+                if (data.projSnapshot) {
+                    flowContainer.outerHTML = `<div class="project-snapshot" id="detailProjSnapshot"></div>`;
+                    const snapshotContainer = document.getElementById('detailProjSnapshot');
+                    data.projSnapshot.forEach(item => {
+                        const node = document.createElement('div');
+                        node.className = 'snapshot-item';
+                        node.innerHTML = `<span>✓</span> ${item}`;
+                        snapshotContainer.appendChild(node);
+                    });
+                } else if (data.projFlow) {
+                    flowContainer.outerHTML = `<div class="pipeline-flow-mini" id="detailProjFlow"></div>`;
+                    const newFlowContainer = document.getElementById('detailProjFlow');
+                    data.projFlow.forEach((step, idx) => {
+                        const node = document.createElement('div');
+                        node.className = 'flow-node';
+                        node.textContent = step;
+                        newFlowContainer.appendChild(node);
 
-                if (idx < data.projFlow.length - 1) {
-                    const arrow = document.createElement('div');
-                    arrow.className = 'flow-arrow';
-                    arrow.textContent = '➔';
-                    flowContainer.appendChild(arrow);
+                        if (idx < data.projFlow.length - 1) {
+                            const arrow = document.createElement('div');
+                            arrow.className = 'flow-arrow';
+                            arrow.textContent = '➔';
+                            newFlowContainer.appendChild(arrow);
+                        }
+                    });
+                } else {
+                    flowContainer.innerHTML = '';
                 }
-            });
+            }
 
             // Fade in
             phaseDetailContainer.style.opacity = 1;
